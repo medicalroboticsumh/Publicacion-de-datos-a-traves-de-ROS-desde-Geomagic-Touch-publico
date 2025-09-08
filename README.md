@@ -11,21 +11,17 @@ Gracias a esta infraestructura, el repositorio sienta las bases necesarias para 
 ## Estructura del Proyecto  
 El repositorio está organizado de la siguiente forma:  
 
-- `CMakeLists.txt`:  
-  Archivo de configuración para la compilación del paquete con `catkin_make`.  
+- `CMakeLists.txt`: Archivo de configuración para la compilación del paquete con `catkin_make`.  
   En este archivo se incluyen los encabezados y las bibliotecas de OpenHaptics, necesarias para trabajar con el Geomagic Touch.  
 
-- `/msg`:  
-  Carpeta que contiene definiciones de mensajes personalizados:  
+- `/msg`: Carpeta que contiene definiciones de mensajes personalizados:  
   - `GimbalAngles.msg`: define los ángulos de tipo gimbal (roll, pitch, yaw).  
   - `Num.msg`: mensaje simple con un número entero.  
 
-- `package.xml`: 
-  Archivo de metadatos del paquete, donde se especifican las dependencias requeridas:  
+- `package.xml`: Archivo de metadatos del paquete, donde se especifican las dependencias requeridas:  
   - `rospy`  
   - `roscpp`  
   - `std_msgs`  
 
-- `/src`:
-  Carpeta destinada al código fuente en C++.  
+- `/src`: Carpeta destinada al código fuente en C++.  
   Contiene la implementación del nodo ROS encargado de publicar la información del Geomagic Touch en diferentes tópicos.  
