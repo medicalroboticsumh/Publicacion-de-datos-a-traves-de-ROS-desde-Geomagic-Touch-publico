@@ -18,10 +18,7 @@ El repositorio está organizado de la siguiente forma:
   - `GimbalAngles.msg`: define los ángulos de tipo gimbal (roll, pitch, yaw).  
   - `Num.msg`: mensaje simple con un número entero.  
 
-- `package.xml`: Archivo de metadatos del paquete, donde se especifican las dependencias requeridas:  
-  - `rospy`  
-  - `roscpp`  
-  - `std_msgs`  
+- `package.xml`: Archivo de metadatos del paquete, donde se especifican las dependencias requeridas (`rospy`, `roscpp`, `std_msgs`).  
 
 - `/src`: Carpeta destinada al código fuente en C++.  
   Contiene la implementación del nodo ROS encargado de publicar la información del Geomagic Touch en diferentes tópicos.  
