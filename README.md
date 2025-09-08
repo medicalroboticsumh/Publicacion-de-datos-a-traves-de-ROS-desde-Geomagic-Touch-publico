@@ -22,3 +22,10 @@ El repositorio está organizado de la siguiente forma:
 
 - `/src`: Carpeta destinada al código fuente en C++.  
   Contiene la implementación del nodo ROS encargado de publicar la información del Geomagic Touch en diferentes tópicos.  
+
+# Requisitos Previos
+Antes de ejecutar el sistema, asegúrese de cumplir con los siguientes requisitos:
+- Conectar 
+- Encender y configurar los siguientes equipos:
+  - Equipo 'Gauss'
+  - Equipo 'Master'
