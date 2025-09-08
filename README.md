@@ -30,11 +30,13 @@ Antes de ejecutar el sistema, asegúrese de cumplir con los siguientes requisito
    - El dispositivo debe estar correctamente conectado al equipo mediante USB y encendido.  
 
 2. **Instalación del SDK OpenHaptics.**  
-   - Es necesario disponer de las bibliotecas y cabeceras de OpenHaptics para acceder a las funciones de bajo nivel del Geomagic Touch.  
+   - Es necesario disponer de las bibliotecas y cabeceras de OpenHaptics para acceder a las funciones de bajo nivel del Geomagic Touch.
+   - Su descarga se realiza desde https://support.3dsystems.com/s/article/OpenHaptics-for-Linux-Developer-Edition-v34?language=en_US.  
 
 3. **Instalación de drivers del Geomagic Touch en Linux.**  
    - Los drivers son imprescindibles para que el dispositivo sea reconocido y controlado correctamente por el sistema operativo.  
-   - Deben instalarse antes de compilar o ejecutar cualquier nodo relacionado con el Phantom.  
+   - Deben instalarse antes de compilar o ejecutar cualquier nodo relacionado con el Phantom.
+   - Su descarga se realiza desde https://support.3dsystems.com/s/article/OpenHaptics-for-Linux-Developer-Edition-v34?language=en_US.
 
 4. **Entorno ROS instalado y configurado.**  
    - Se recomienda ROS Noetic (Ubuntu 20.04) o una distribución compatible.  
