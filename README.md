@@ -61,8 +61,8 @@ Es necesario comprobar y establecer las siguientes direcciones IP:
      ./Touch_AdvancedConfig
      ```
    - Se abrirá una ventana para la configuración del dispositivo.
-         - En la pestaña ‘Settings’, puede asociarse un número de serie (desplegable `Serial Number`) con un nombre personalizado (campo `Device Name`) para cada dispositivo conectado.
-         - La pestaña `Custom Calibration` permite definir un procedimiento de calibración personalizado, sustituyendo al proceso automático por defecto. *(Esta opción solo debe modificarse en caso de requerir una configuración especial, ya              que un ajuste incorrecto puede comprometer la precisión y estabilidad del dispositivo)*.
+     - En la pestaña ‘Settings’, puede asociarse un número de serie (desplegable `Serial Number`) con un nombre personalizado (campo `Device Name`) para cada dispositivo conectado.
+     - La pestaña `Custom Calibration` permite definir un procedimiento de calibración personalizado, sustituyendo al proceso automático por defecto. *(Esta opción solo debe modificarse en caso de requerir una configuración especial, ya              que un ajuste incorrecto puede comprometer la precisión y estabilidad del dispositivo)*.
 
 3. Comprobar que la dirección IP del ROS Master esté correctamente especificada en la variable de entorno `ROS_MASTER_URI`, y que el nombre del host local coincida con el valor de `ROS_HOSTNAME`.
    Para ello, ejecute los siguientes comandos:
