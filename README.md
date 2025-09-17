@@ -51,12 +51,12 @@ Es necesario comprobar y establecer las siguientes direcciones IP:
 - **Equipo 'Master'**: `192.168.0.114` *(comprobar, esta IP puede variar)*
 
 ## Pasos de Ejecución
-1. Iniciar `roscore` en el equipo Master:
+1. Iniciar `roscore` en el equipo **'Master'**:
    ```bash
    roscore
    ```
 2. Lanzar el driver del Geomagic Touch:
-   - Abrir un nuevo terminal en el equipo 'Gauss'.
+   - Abrir un nuevo terminal en el equipo **'Gauss'**.
    - Acceder a la ruta `.../DriverPhantom/TouchDriver_2024_09_19/bin`.
    - Abrir un terminal y ejecutar el siguiente comando:
      ```bash
@@ -64,7 +64,7 @@ Es necesario comprobar y establecer las siguientes direcciones IP:
      ```
    - Se abrirá una ventana para la configuración del dispositivo.
      - En la pestaña `Settings`, puede asociarse un número de serie (desplegable `Serial Number`) con un nombre personalizado (campo `Device Name`) para cada dispositivo conectado.
-     - La pestaña `Custom Calibration` permite definir un procedimiento de calibración personalizado, sustituyendo al proceso automático por defecto. *(Esta opción solo debe modificarse en caso de requerir una configuración especial, ya              que un ajuste incorrecto puede comprometer la precisión y estabilidad del dispositivo)*.
+     - La pestaña `Custom Calibration` permite definir un procedimiento de calibración personalizado, sustituyendo al proceso automático por defecto. *(Esta opción solo debe modificarse en caso de requerir una configuración especial, ya que un ajuste incorrecto puede comprometer la precisión y estabilidad del dispositivo)*.
 
 3. Comprobar que la dirección IP del ROS Master esté correctamente especificada en la variable de entorno `ROS_MASTER_URI`, y que el nombre del host local coincida con el valor de `ROS_HOSTNAME`.
    Para ello, ejecute los siguientes comandos:
@@ -74,14 +74,14 @@ Es necesario comprobar y establecer las siguientes direcciones IP:
    ```
    En este caso, el primer comando debe dar como salida `http://192.168.0.114:11311`, que corresponde a la dirección IP del equipo ‘Master’; mientras que el segundo comando debe devolver ‘192.168.0.115’, que es la dirección IP del equipo         local con el que se está trabajando ('Gauss').
 
-4. Abrir un nuevo terminal en el equipo 'Gauss' y lanzar el nodo ROS para la publicación de la información del Geomagic Touch:
+4. Abrir un nuevo terminal en el equipo **'Gauss'** y lanzar el nodo ROS para la publicación de la información del Geomagic Touch:
    ```bash
    cd catkin_ws
    source devel/setup.bash
    rosrun teleop_phantom talker_phantom
    ```
 5. Por último, para verificar que el nodo está funcionando correctamente y publicando datos en la red ROS, se puede visualizar la lista de topics activos.
-   Para ello, abra un nuevo terminal en el equipo 'Gauss' y ejecute el siguiente comando:
+   Para ello, abra un nuevo terminal en el equipo **'Gauss'** y ejecute el siguiente comando:
    ```bash
    rostopic list
    ```
