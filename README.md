@@ -42,8 +42,10 @@ Antes de ejecutar el sistema, asegúrese de cumplir con los siguientes requisito
    - Se recomienda ROS Noetic (Ubuntu 20.04) o una distribución compatible.  
 
 5. **Encender y configurar los equipos.**  
-   - Equipo *Master*.  
-   - Equipo *Gauss*.  
+   - Equipo **'Master'**
+     - Contraseña: nbio.
+   - Equipo **'Gauss'**.
+     - Contraseña: NBIO.
 
 ## Configuración de Red
 Es necesario comprobar y establecer las siguientes direcciones IP:
