@@ -74,7 +74,7 @@ Es necesario comprobar y establecer las siguientes direcciones IP:
    echo $ROS_MASTER_URI
    echo $ROS_HOSTANAME
    ```
-   En este caso, el primer comando debe dar como salida `http://192.168.0.114:11311`, que corresponde a la dirección IP del equipo ‘Master’; mientras que el segundo comando debe devolver ‘192.168.0.115’, que es la dirección IP del equipo local con el que se está trabajando ('Gauss').
+   En este caso, el primer comando debe dar como salida `http://192.168.0.114:11311`, que corresponde a la dirección IP del equipo **'Master'**; mientras que el segundo comando debe devolver `192.168.0.115`, que es la dirección IP del equipo local con el que se está trabajando (**'Gauss'**).
 
 4. Abrir un nuevo terminal en el equipo **'Gauss'** y lanzar el nodo ROS para la publicación de la información del Geomagic Touch:
    ```bash
