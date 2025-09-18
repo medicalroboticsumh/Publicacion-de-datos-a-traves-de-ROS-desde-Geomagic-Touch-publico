@@ -71,8 +71,10 @@ Es necesario comprobar y establecer las siguientes direcciones IP:
      - En la pestaña `Settings`, puede asociarse un número de serie (desplegable `Serial Number`) con un nombre personalizado (campo `Device Name`) para cada dispositivo conectado.
      - La pestaña `Custom Calibration` permite definir un procedimiento de calibración personalizado, sustituyendo al proceso automático por defecto. *(Esta opción solo debe modificarse en caso de requerir una configuración especial, ya que un ajuste incorrecto puede comprometer la precisión y estabilidad del dispositivo)*.
 
+    - Una vez realizada la configuración, **cerrar la ventana y el terminal** para poder continuar con el procedimiento.
+
 3. Comprobar que la dirección IP del ROS Master esté correctamente especificada en la variable de entorno `ROS_MASTER_URI`, y que el nombre del host local coincida con el valor de `ROS_HOSTNAME`.
-   Para ello, ejecute los siguientes comandos:
+   Para ello, abrir un nuevo terminal en el equipo **'Gauss'** y ejecutar los siguientes comandos:
    ```bash
    echo $ROS_MASTER_URI
    echo $ROS_HOSTNAME
@@ -81,6 +83,7 @@ Es necesario comprobar y establecer las siguientes direcciones IP:
 
 4. Abrir un nuevo terminal en el equipo **'Gauss'** y lanzar el nodo ROS para la publicación de la información del Geomagic Touch:
    ```bash
+   cd
    cd catkin_ws
    source devel/setup.bash
    rosrun teleop_phantom talker_phantom
