@@ -59,8 +59,11 @@ Es necesario comprobar y establecer las siguientes direcciones IP:
    ```
 2. Lanzar el driver del Geomagic Touch:
    - Abrir un nuevo terminal en el equipo **'Gauss'**.
-   - Acceder a la ruta `.../DriverPhantom/TouchDriver_2024_09_19/bin`.
-   - Abrir un terminal y ejecutar el siguiente comando:
+   - Acceder a la ruta `/home/mru/Desktop/DriverPhantom/TouchDriver_2024_09_19/bin`. *(corresponde a la ruta donde se encuentra ubicado el driver)*
+     ```bash
+     cd /home/mru/Desktop/DriverPhantom/TouchDriver_2024_09_19/bin
+     ```
+   - Dentro del mismo terminal, ejecutar el siguiente comando:
      ```bash
      ./Touch_AdvancedConfig
      ```
