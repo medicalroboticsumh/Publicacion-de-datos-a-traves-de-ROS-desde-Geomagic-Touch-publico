@@ -92,7 +92,7 @@ Es necesario comprobar y establecer las siguientes direcciones IP:
    ```
 6. Por último, puede comprobar que los datos se recogen correctamente en los topics visualizando la información en tiempo real de uno de ellos.
    Para ello, en el mismo terminal, imprima la información de uno de los topics que aparecieron en la lista anterior. Por ejemplo:
-   ``bash
+   ```bash
    rostopic echo /position_left
    ```
    Ahora puede realizar movimientos con el Geomagic Touch sobre sus 3 ejes y comprobar como sus valores varían en tiempo real.
