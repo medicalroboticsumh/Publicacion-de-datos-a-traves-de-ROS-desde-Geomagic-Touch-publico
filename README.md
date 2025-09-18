@@ -1,6 +1,6 @@
 # Publicación-de-datos-a-través-de-ROS-desde-Geomagic-Touch
 ## Descripción
-Este repositorio contiene un paquete de ROS orientado a la publicación en tiempo real de los datos generados por el dispositivo háptico Geomagic Touch (anteriormente conocido como Phantom Omni). Para ello, se utilizan las bibliotecas OpenHaptics, que permiten capturar de manera continua la información del efector final del dispositivo, incluyendo su posición, orientación y el estado de los botones del stylus, entre otros parámetros.
+Este repositorio contiene un paquete de **ROS** orientado a la publicación en tiempo real de los datos generados por el dispositivo háptico **Geomagic Touch** (anteriormente conocido como Phantom Omni). Para ello, se utilizan las bibliotecas **OpenHaptics**, que permiten capturar de manera continua la información del efector final del dispositivo, incluyendo su posición, orientación y el estado de los botones del stylus, entre otros parámetros.
 
 El sistema está diseñado para organizar dichos datos en estructuras estandarizadas compatibles con ROS, facilitando su transmisión, visualización y posterior procesamiento dentro de aplicaciones de teleoperación. En este contexto, el nodo principal actúa como un talker, publicando de forma constante los datos en diferentes tópicos de ROS.
 
@@ -85,8 +85,14 @@ Es necesario comprobar y establecer las siguientes direcciones IP:
    source devel/setup.bash
    rosrun teleop_phantom talker_phantom
    ```
-5. Por último, para verificar que el nodo está funcionando correctamente y publicando datos en la red ROS, se puede visualizar la lista de topics activos.
+5. Para verificar que el nodo está funcionando correctamente y publicando datos en la red ROS, se puede visualizar la lista de topics activos.
    Para ello, abra un nuevo terminal en el equipo **'Gauss'** y ejecute el siguiente comando:
    ```bash
    rostopic list
    ```
+6. Por último, puede comprobar que los datos se recogen correctamente en los topics visualizando la información en tiempo real de uno de ellos.
+   Para ello, en el mismo terminal, imprima la información de uno de los topics que aparecieron en la lista anterior. Por ejemplo:
+   ``bash
+   rostopic echo /position_left
+   ```
+   Ahora puede realizar movimientos con el Geomagic Touch sobre sus 3 ejes y comprobar como sus valores varían en tiempo real.
