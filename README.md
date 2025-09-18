@@ -96,3 +96,7 @@ Es necesario comprobar y establecer las siguientes direcciones IP:
    rostopic echo /position_left
    ```
    Ahora puede realizar movimientos con el Geomagic Touch sobre sus 3 ejes y comprobar como sus valores varían en tiempo real.
+   <p align="center">
+   <img width="428" height="239" alt="Screenshot from 2025-09-18 10-39-38" src="https://github.com/user-attachments/assets/6c4575f7-68c0-4735-b1ca-af4adeb8cda0" />
+   <p/>
+
