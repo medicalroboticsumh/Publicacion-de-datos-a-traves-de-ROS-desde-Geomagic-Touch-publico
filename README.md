@@ -75,7 +75,7 @@ Es necesario comprobar y establecer las siguientes direcciones IP:
    Para ello, ejecute los siguientes comandos:
    ```bash
    echo $ROS_MASTER_URI
-   echo $ROS_HOSTANAME
+   echo $ROS_HOSTNAME
    ```
    En este caso, el primer comando debe dar como salida `http://192.168.0.114:11311`, que corresponde a la dirección IP del equipo **'Master'**; mientras que el segundo comando debe devolver `192.168.0.115`, que es la dirección IP del equipo local con el que se está trabajando (**'Gauss'**).
 
