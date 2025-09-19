@@ -9,7 +9,7 @@ Una característica diferencial de este desarrollo es la posibilidad de trabajar
 Gracias a esta infraestructura, el repositorio sienta las bases necesarias para la integración del Geomagic Touch en sistemas de teleoperación quirúrgica, proporcionando un entorno robusto, escalable y fácilmente extensible hacia implementaciones más complejas de control maestro-esclavo con retroalimentación háptica.
 
 ## Estructura del Proyecto  
-El repositorio contiene el paquete de ROS **`force_sensor_node`**, cuya organización es la siguiente:
+El repositorio contiene el paquete de ROS **`teleop_phantom`**, cuya organización es la siguiente:
 
 - `CMakeLists.txt`: Archivo de configuración para la compilación del paquete con `catkin_make`.  
   En este archivo se incluyen los encabezados y las bibliotecas de OpenHaptics, necesarias para trabajar con el Geomagic Touch.  
