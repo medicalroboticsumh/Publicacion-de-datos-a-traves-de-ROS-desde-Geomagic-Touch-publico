@@ -41,16 +41,7 @@ Antes de ejecutar el sistema, asegúrese de cumplir con los siguientes requisito
 4. **Entorno ROS instalado y configurado.**  
    - Se recomienda ROS Noetic (Ubuntu 20.04) o una distribución compatible.  
 
-5. **Encender y configurar los equipos.**  
-   - Equipo **'Master'**
-     - Contraseña: nbio.
-   - Equipo **'Gauss'**.
-     - Contraseña: NBIO.
-
-## Configuración de Red
-Es necesario comprobar y establecer las siguientes direcciones IP:
-- **Equipo 'Gauss'**: `192.168.0.115`
-- **Equipo 'Master'**: `192.168.0.114` *(comprobar, esta IP puede variar)*
+5. **Encender y configurar los equipos MASTER Y GAUSS.**  
 
 ## Pasos de Ejecución
 1. Iniciar `roscore` en el equipo **'Master'**:
