@@ -22,7 +22,7 @@ El repositorio contiene el paquete de ROS **`teleop_phantom`**, cuya organizaci�
 
 - `/src`: Carpeta destinada al código fuente en C++.  
   Contiene la implementación del nodo ROS encargado de publicar la información del Geomagic Touch en diferentes tópicos.
-  - `talker_phantom.cpp`: 
+  - `talker_phantom.cpp`: Este código se encarga de leer y publicar los datos de dos dispositivos hápticos en ROS. Todos los topics se crean como Stamped, es decir, incluyen un timestamp en el header, lo que permite analizar la frecuencia de publicación de los mensajes de manera precisa. Se publican información de posición, velocidad, ángulos, botones y transformaciones, así como la posición relativa respecto a la lectura anterior, para facilitar el estudio del comportamiento del dispositivo.
   
 # Requisitos Previos
 Antes de ejecutar el sistema, asegúrese de cumplir con los siguientes requisitos:
